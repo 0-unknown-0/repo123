@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+typedef unsigned int pixel[3] ;
+//typedef  pixel ImgWidth[2] ;
+//typedef ImgWidth ImgHeight[3] ;
+pixel **fillArea (const pixel *const *const image,
+				  size_t width, size_t height,
+				  size_t row,   size_t column)
+{
+	return nullptr ;
+}
+
+
+int main() {
+	size_t width = 5, height = 5;
+	size_t row, column ;
+	cin >> row >> column ;
+	const pixel image[height][width] = { {{23, 33, 21}, {23, 33, 21}, {23, 33, 21}, {23, 33, 21}, {23, 33, 21}},
+										 {{23, 33, 21}, {23, 33, 21}, {23, 33, 21}, {23, 33, 21}, {23, 33, 21}},
+										 {{23, 33, 21}, {23, 33, 21}, {23, 33, 21}, {23, 33, 21}, {23, 33, 21}},
+										 {{23, 33, 21}, {23, 33, 21}, {23, 33, 21}, {23, 33, 21}, {23, 33, 21}},
+										 {{23, 33, 21}, {23, 33, 21}, {23, 33, 21}, {23, 33, 21}, {23, 33, 21}}
+																											};
+	fillArea(image, width, height, row, column) ;
+
+	return 0;
+}
